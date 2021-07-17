@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: d8dc5bfba57014e4aaf6c3ad0094dfd1
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4633462667545851135
+    second: Attack (9)_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +44,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +104,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Attack (9)_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 112
+        height: 83
+      alignment: 9
+      pivot: {x: 0.83402365, y: 0.30089068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4ba1b3fbd5d4040800000000000000
+      internalID: 4633462667545851135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
