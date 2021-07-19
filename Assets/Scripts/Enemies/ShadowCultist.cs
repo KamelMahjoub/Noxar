@@ -28,7 +28,7 @@ public class ShadowCultist : Enemy,IDamageable
         {
             return;
         }
-        Debug.Log("Skeleton Damage!");
+        
         //substract 1 from health 
         Health--;
 

@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
 
     private SpriteRenderer _playerSprite;
 
+    private Cinemachine.CinemachineVirtualCameraBase CM;
+
 
     
 
@@ -119,6 +121,7 @@ public class Player : MonoBehaviour
         else if (move < 0)
         {      
             transform.eulerAngles = new Vector3(0, 180, 0);
+           
         }
     }
 }

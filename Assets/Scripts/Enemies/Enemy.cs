@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour
 
     public virtual void Update()
     {
-       if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") && anim.GetBool("InCombat") == false)
+        if(anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") && anim.GetBool("InCombat") == false)
         {
             return;
         }
@@ -83,7 +83,7 @@ public class Enemy : MonoBehaviour
         //check for distance between player and enemy
         float distance = Vector3.Distance(transform.localPosition, player.transform.localPosition);
 
-        if (distance > 2.0f)
+        if (distance > 3.0f)
         {
             isHit = false;
             anim.SetBool("InCombat", false);
@@ -100,13 +100,13 @@ public class Enemy : MonoBehaviour
         {
             //face right
             //   sprite.flipX = false;
-           transform.eulerAngles = new Vector3(0, 0, 0);
+           transform.eulerAngles = new Vector3(0, 180, 0);
         }
         else if (direction.x < 0 && anim.GetBool("InCombat") == true)
         {
             //face left
            // sprite.flipX = true;
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
 
         }
     }

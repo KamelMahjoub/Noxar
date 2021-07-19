@@ -7,7 +7,7 @@ public class Attack : MonoBehaviour
 
     //variable to determine if the damage function can be called(cd)
     private bool _canDamage = true;
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Hit :" + other.name);
