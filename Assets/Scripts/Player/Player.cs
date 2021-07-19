@@ -111,14 +111,14 @@ public class Player : MonoBehaviour
     {
         if (move > 0)
         {
-            _playerSprite.flipX = false;
-            
+           // _playerSprite.flipX = false;
+            transform.eulerAngles = new Vector3(0, 0, 0);
+
 
         }
         else if (move < 0)
-        {
-            _playerSprite.flipX = true;
-
+        {      
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
     }
 }

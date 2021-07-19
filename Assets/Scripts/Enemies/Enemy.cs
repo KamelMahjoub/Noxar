@@ -53,14 +53,15 @@ public class Enemy : MonoBehaviour
     {
         if (currentTarget == pointA.position)
         {
-            //transform.eulerAngles = new Vector3(0, 180, 0);
-            sprite.flipX = true;
+            
+          //  sprite.flipX = true;
+            transform.eulerAngles = new Vector3(0, 180, 0);
 
         }
         else
         {
-           // transform.eulerAngles = new Vector3(0, 0, 0);
-            sprite.flipX = false;
+            transform.eulerAngles = new Vector3(0, 0, 0);
+           // sprite.flipX = false;
         }
 
         if (transform.position == pointA.position)
@@ -73,7 +74,7 @@ public class Enemy : MonoBehaviour
             currentTarget = pointA.position;
             anim.SetTrigger("Idle");
         }
-        Debug.Log(currentTarget);
+       
         if (isHit == false)
         {
             transform.position = Vector3.MoveTowards(transform.position, currentTarget, speed * Time.deltaTime);
@@ -98,14 +99,14 @@ public class Enemy : MonoBehaviour
         if (direction.x > 0 && anim.GetBool("InCombat") == true)
         {
             //face right
-               sprite.flipX = false;
-           // transform.eulerAngles = new Vector3(0, 0, 0);
+            //   sprite.flipX = false;
+           transform.eulerAngles = new Vector3(0, 0, 0);
         }
         else if (direction.x < 0 && anim.GetBool("InCombat") == true)
         {
             //face left
-            sprite.flipX = true;
-          //  transform.eulerAngles = new Vector3(0, 180, 0);
+           // sprite.flipX = true;
+            transform.eulerAngles = new Vector3(0, 180, 0);
 
         }
     }
