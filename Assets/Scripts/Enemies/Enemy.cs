@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
 
     protected bool isDead = false;
 
-    //public GameObject diamondPrefab;
+    public GameObject coinPrefab;
 
 
     public virtual void Init()

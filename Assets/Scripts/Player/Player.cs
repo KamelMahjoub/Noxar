@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float _jumpForce = 8.0f;
 
+    public int Coins;
+
+
     private bool _resetJump = false;
 
    
@@ -27,7 +30,9 @@ public class Player : MonoBehaviour
 
     private SpriteRenderer _playerSprite;
 
-    private Cinemachine.CinemachineVirtualCameraBase CM;
+
+
+ 
 
 
     
@@ -124,5 +129,12 @@ public class Player : MonoBehaviour
            
         }
     }
+
+    public void AddCoins(int amount)
+    {
+        Coins += amount;
+       // UIManager.Instance.UpdateGemCount(diamonds);
+    }
+
 }
 

@@ -46,10 +46,10 @@ public class ShadowCultist : Enemy,IDamageable
 
             anim.SetTrigger("Death");
 
-            //spawn diamon,d
-           // GameObject diamond = Instantiate(diamondPrefab, transform.position, Quaternion.identity) as GameObject;
+            //spawn diamond
+            GameObject coin = Instantiate(coinPrefab, transform.position, Quaternion.identity) as GameObject;
             //change the value of the diamond 
-            //diamond.GetComponent<Diamond>().gems = base.gems;
+            coin.GetComponent<Coin>().coins = base.coins;
         }
 
     }
