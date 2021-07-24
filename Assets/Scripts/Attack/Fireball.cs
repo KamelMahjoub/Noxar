@@ -8,7 +8,7 @@ public class Fireball : MonoBehaviour
 
     public void Start()
     {
-        Destroy(this.gameObject, 3.0f);
+        Destroy(this.gameObject, 4.0f);
     }
 
     //move right at 3m per second 
