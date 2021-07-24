@@ -100,13 +100,13 @@ public class Enemy : MonoBehaviour
         {
             //face right
             //   sprite.flipX = false;
-           transform.eulerAngles = new Vector3(0, 180, 0);
+           transform.eulerAngles = new Vector3(0, 0, 0);
         }
         else if (direction.x < 0 && anim.GetBool("InCombat") == true)
         {
             //face left
            // sprite.flipX = true;
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.eulerAngles = new Vector3(0, 180, 0);
 
         }
     }
