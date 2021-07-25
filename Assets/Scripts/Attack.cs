@@ -6,7 +6,7 @@ public class Attack : MonoBehaviour
 {
 
     //variable to determine if the damage function can be called(cd)
-    private bool _canDamage = true;
+  //  private bool _canDamage = true;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,7 +19,7 @@ public class Attack : MonoBehaviour
             //if  can attack
             hit.Damage();
             //set that variable to false
-            _canDamage = false;
+         //   _canDamage = false;
             StartCoroutine(ResetDamage());
         }
     }
@@ -28,6 +28,6 @@ public class Attack : MonoBehaviour
     private IEnumerator ResetDamage()
     {
         yield return new WaitForSeconds(0.5F);
-        _canDamage = true;
+       // _canDamage = true;
     }
 }

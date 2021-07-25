@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
 
 
@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     //Variable for jumpforce
     [SerializeField]
     private float _jumpForce = 8.0f;
+
+    public int Health { get; set; }
 
     public int Coins;
 
@@ -44,6 +46,7 @@ public class Player : MonoBehaviour
         _rigid = GetComponent<Rigidbody2D>();
         _playerAnim = GetComponent<PlayerAnimation>();
         _playerSprite = GetComponentInChildren<SpriteRenderer>();
+        Health = 6;
         
     } 
 
@@ -59,6 +62,11 @@ public class Player : MonoBehaviour
     
     void Movement()
     {
+
+        if (Health < 1)
+        {
+            return;
+        }
         //check for horizental input (left/right) 
         float move = Input.GetAxisRaw("Horizontal");
 
@@ -130,10 +138,33 @@ public class Player : MonoBehaviour
         }
     }
 
+
+    public void Damage()
+    {
+        if (Health < 1)
+        {
+            return;
+        }
+
+        Debug.Log("Player damaged");
+        //remove 1 health
+        Health--;
+        //update ui display
+        UIManager.Instance.UpdateLives(Health);
+        //check for dead
+
+        if (Health < 1)
+        {
+            _playerAnim.Death();
+        }
+        //play death animation
+
+    }
+
     public void AddCoins(int amount)
     {
         Coins += amount;
-       // UIManager.Instance.UpdateGemCount(diamonds);
+       UIManager.Instance.UpdateCoinCount(Coins);
     }
 
 }
