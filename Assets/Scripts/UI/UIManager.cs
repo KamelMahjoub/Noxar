@@ -35,7 +35,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdateCoinCount(int count)
     {
-        CoinCountText.text = "" + count;
+        CoinCountText.text = "" + count + " X";
     }
 
 
