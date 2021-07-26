@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour, IDamageable
 {
@@ -54,7 +55,7 @@ public class Player : MonoBehaviour, IDamageable
     void Update()
     {
         Movement();
-        if (Input.GetMouseButtonDown(0) && IsGrounded() == true)
+        if (CrossPlatformInputManager.GetButtonDown("Attack_Button") && IsGrounded() == true)
         {
             _playerAnim.Attack();
         }
@@ -68,17 +69,17 @@ public class Player : MonoBehaviour, IDamageable
             return;
         }
         //check for horizental input (left/right) 
-        float move = Input.GetAxisRaw("Horizontal");
+        float move = CrossPlatformInputManager.GetAxis("Horizontal");
 
-       _grounded = IsGrounded();
+        _grounded = IsGrounded();
 
         Flip(move);
-       
 
-     
+
+
         //Jumping
         //if space key is pressed && grounded = true 
-       if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() == true)
+        if ((Input.GetKeyDown(KeyCode.Space) || CrossPlatformInputManager.GetButtonDown("Jump_Button")) && IsGrounded() == true)
         {
             //jump!
             //current velocity = new velocity(Current x , Jumpforce) 

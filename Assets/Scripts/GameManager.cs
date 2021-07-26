@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
         get
         {
             //if its null , it'll break the game
-            if (_instance == null) ;
+            if (_instance == null) 
             {
                 Debug.Log("Game Manager is Null!");
             }
