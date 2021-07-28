@@ -136,7 +136,7 @@ public class Shop : MonoBehaviour
         else
         {
             buttonBuy.SetActive(true);
-            return "Would you like to purchase a " + getItemName(ItemID) + " for " + getItemPrice(ItemID) + " Coins?";
+            return "Would you like to acquire the " + getItemName(ItemID) + " for " + getItemPrice(ItemID) + " Coins?";
         }
 
         return "ERROR" + ItemID;
