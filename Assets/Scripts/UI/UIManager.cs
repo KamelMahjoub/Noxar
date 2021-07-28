@@ -33,9 +33,14 @@ public class UIManager : MonoBehaviour
         _instance = this;
     }
 
+    public void OpenShop(int count)
+    {
+        
+    }
+
     public void UpdateCoinCount(int count)
     {
-        CoinCountText.text = "" + count + " X";
+        CoinCountText.text = "" + count;
     }
 
 

@@ -59,8 +59,10 @@ public class Player : MonoBehaviour, IDamageable
         {
             _playerAnim.Attack();
         }
+        UIManager.Instance.UpdateCoinCount(Coins);
+
     }
-    
+
     void Movement()
     {
 
@@ -168,5 +170,10 @@ public class Player : MonoBehaviour, IDamageable
        UIManager.Instance.UpdateCoinCount(Coins);
     }
 
+    public void SubstractCoins(int amount)
+    {
+        Coins -= amount;
+        UIManager.Instance.UpdateCoinCount(Coins);
+    }
 }
 

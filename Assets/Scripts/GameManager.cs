@@ -17,7 +17,11 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
-    
+
+    public bool Item1 { get; set; }
+    public bool Item2 { get; set; }
+    public bool Item3 { get; set; }
+
 
     private void Awake()
     {
