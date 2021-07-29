@@ -29,10 +29,10 @@ public class Shop : MonoBehaviour
 
             if (_player != null)
             {
-                UIManager.Instance.OpenShop(_player.Coins);
+                ShopPanel.SetActive(true);
+                Time.timeScale = 0f;
             }
-            ShopPanel.SetActive(true);
-            Time.timeScale = 0f;
+            
         }
     }
 

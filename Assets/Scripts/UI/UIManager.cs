@@ -31,6 +31,11 @@ public class UIManager : MonoBehaviour
     public Sprite RingSprite;
     public Sprite SwordSprite;
 
+    public GameObject HUD;
+    public GameObject ShopPanel;
+    public GameObject ControlUI;
+    public GameObject PauseMenu;
+
 
     private void Start()
     {
@@ -40,10 +45,7 @@ public class UIManager : MonoBehaviour
         _instance = this;     
     }
 
-    public void OpenShop(int count)
-    {
-        
-    }
+   
 
     public void UpdateCoinCount(int count)
     {
@@ -201,5 +203,16 @@ public class UIManager : MonoBehaviour
                 }
         }
     }
+    
+
+    public void OnPause()
+    {
+        HUD.SetActive(false);
+        ShopPanel.SetActive(false);
+        ControlUI.SetActive(false);
+        PauseMenu.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
 
 }
