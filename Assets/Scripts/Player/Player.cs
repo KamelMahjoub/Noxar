@@ -48,18 +48,23 @@ public class Player : MonoBehaviour, IDamageable
         _playerAnim = GetComponent<PlayerAnimation>();
         _playerSprite = GetComponentInChildren<SpriteRenderer>();
         Health = 6;
-        
     } 
 
     // Update is called once per frame
     void Update()
     {
+
         Movement();
+
         if (CrossPlatformInputManager.GetButtonDown("Attack_Button") && IsGrounded() == true)
         {
             _playerAnim.Attack();
         }
+
         UIManager.Instance.UpdateCoinCount(Coins);
+
+        CheckPowerUps();
+
 
     }
 
@@ -175,5 +180,20 @@ public class Player : MonoBehaviour, IDamageable
         Coins -= amount;
         UIManager.Instance.UpdateCoinCount(Coins);
     }
+
+    public void CheckPowerUps()
+    {
+        if (GameManager.Instance.Cloak == true)
+        {
+            _jumpForce = 12f;
+        }
+        if (GameManager.Instance.Ring == true)
+           _speed = 12f;
+         
+        
+       
+
+    }
+    
 }
 

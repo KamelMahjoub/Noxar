@@ -12,7 +12,6 @@ public class Shop : MonoBehaviour
     public Text coinText;
     public Text panelText;
     public GameObject buttonBuy;
-
     public GameObject JumpPanelScript;
     private JumpPanel JumpPanelVar;
 
@@ -51,15 +50,15 @@ public class Shop : MonoBehaviour
         switch(ItemID)
         {
             case 1:
-                if (GameManager.Instance.Item1 == true)
+                if (GameManager.Instance.Cloak == true)
                     return true;
                 break;
             case 2:
-                if (GameManager.Instance.Item2 == true)
+                if (GameManager.Instance.Ring == true)
                     return true;
                 break;
             case 3:
-                if (GameManager.Instance.Item3 == true)
+                if (GameManager.Instance.Sword == true)
                     return true;
                 break;
         }
@@ -73,13 +72,16 @@ public class Shop : MonoBehaviour
         switch (ItemID)
         {
             case 1:
-                GameManager.Instance.Item1 = true;        
+                GameManager.Instance.Cloak = true;
+                UIManager.Instance.UpdateInventoryOnAdd(ItemID);
                 break;
             case 2:
-                GameManager.Instance.Item1 = true;
+                GameManager.Instance.Ring= true;
+                UIManager.Instance.UpdateInventoryOnAdd(ItemID);
                 break;
             case 3:
-                GameManager.Instance.Item1 = true;
+                GameManager.Instance.Sword = true;
+                UIManager.Instance.UpdateInventoryOnAdd(ItemID);
                 break;
         }
     }
@@ -147,8 +149,6 @@ public class Shop : MonoBehaviour
     public virtual void BuyItem(int ItemID)
     {
         int price = getItemPrice(ItemID);
-        Debug.Log(price);
-        Debug.Log(ItemID);
 
         if (CheckItemPurchased(ItemID) == false)
         {

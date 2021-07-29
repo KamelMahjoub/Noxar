@@ -18,9 +18,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public bool Item1 { get; set; }
-    public bool Item2 { get; set; }
-    public bool Item3 { get; set; }
+    public bool Cloak { get; set; }
+    public bool Ring { get; set; }
+    public bool Sword { get; set; }
 
 
     private void Awake()

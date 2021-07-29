@@ -18,8 +18,8 @@ public class JumpPanel : Shop
 
     public void Start()
     {
-        _itemName = "Jump Boots";
-        _itemPrice = 10;
+        _itemName = "Cape of flight";
+        _itemPrice = 15;
         _itemID = 1;
         Button b = purchaseButton.GetComponent<Button>();
         b.onClick.AddListener(() => BuyItem(_itemID));
@@ -42,10 +42,6 @@ public class JumpPanel : Shop
 
     public override void BuyItem(int ItemID)
     {
-        Debug.Log(ItemID);
-        Debug.Log(_itemPrice);
-        Debug.Log(_itemName);
-
         base.BuyItem(_itemID);
     }
 
