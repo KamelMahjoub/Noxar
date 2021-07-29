@@ -32,7 +32,6 @@ public class Shop : MonoBehaviour
                 UIManager.Instance.OpenShop(_player.Coins);
             }
             ShopPanel.SetActive(true);
-            coinText.text = "" + _player.Coins;
             Time.timeScale = 0f;
         }
     }
