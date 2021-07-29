@@ -33,13 +33,14 @@ public class UIManager : MonoBehaviour
 
     public GameObject HUD;
     public GameObject ShopPanel;
-    public GameObject ControlUI;
+    public GameObject Joystick;
+    public GameObject JumpButton;
+    public GameObject AttackButton;
+
     public GameObject PauseMenu;
 
+    private bool checkShop;
 
-    private void Start()
-    {
-    }
     private void Awake()
     {
         _instance = this;     
@@ -205,13 +206,40 @@ public class UIManager : MonoBehaviour
     }
     
 
+    public bool checkShopOpen()
+    {
+        if (ShopPanel.activeSelf)
+            return true;
+        else
+            return false;
+    }
+
+
     public void OnPause()
     {
+        checkShop = checkShopOpen();
         HUD.SetActive(false);
         ShopPanel.SetActive(false);
-        ControlUI.SetActive(false);
+        Joystick.GetComponent<Image>().enabled = false;
+        JumpButton.GetComponent<Image>().enabled = false;
+        AttackButton.GetComponent<Image>().enabled = false;
         PauseMenu.SetActive(true);
         Time.timeScale = 0f;
+
+    }
+
+    public void OnResume()
+    {
+        HUD.SetActive(true);
+        if(checkShop)
+            ShopPanel.SetActive(true);
+        else
+            ShopPanel.SetActive(false);
+        Joystick.GetComponent<Image>().enabled = true;
+        JumpButton.GetComponent<Image>().enabled = true;
+        AttackButton.GetComponent<Image>().enabled = true;
+        PauseMenu.SetActive(false);
+        Time.timeScale = 1f;
     }
 
 
