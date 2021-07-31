@@ -36,8 +36,14 @@ public class UIManager : MonoBehaviour
     public GameObject Joystick;
     public GameObject JumpButton;
     public GameObject AttackButton;
+    public GameObject QuitButtonPausemenu;
+    public GameObject QuitButtonQuitMenu;
+    public GameObject CancelButton;
 
     public GameObject PauseMenu;
+    public GameObject QuitMenu;
+
+
 
     private bool checkShop;
 
@@ -240,6 +246,24 @@ public class UIManager : MonoBehaviour
         AttackButton.GetComponent<Image>().enabled = true;
         PauseMenu.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void ShowQuitMenu()
+    {
+        PauseMenu.SetActive(false);
+        QuitMenu.SetActive(true);
+    }
+
+    public void ReturnToPauseMenu()
+    {
+        QuitMenu.SetActive(false);
+        PauseMenu.SetActive(true);
+    }
+
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
 

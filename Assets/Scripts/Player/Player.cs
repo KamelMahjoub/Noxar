@@ -48,10 +48,6 @@ public class Player : MonoBehaviour, IDamageable
         _playerAnim = GetComponent<PlayerAnimation>();
         _playerSprite = GetComponentInChildren<SpriteRenderer>();
         Health = 6;
-        GameManager.Instance.Ring = true;
-        GameManager.Instance.Sword = true;
-        GameManager.Instance.Cloak = true;
-        UIManager.Instance.UpdateInventory();
     } 
 
     // Update is called once per frame
