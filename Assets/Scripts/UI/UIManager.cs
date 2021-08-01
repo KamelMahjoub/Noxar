@@ -27,9 +27,13 @@ public class UIManager : MonoBehaviour
     public GameObject inventorySlot1;
     public GameObject inventorySlot2;
     public GameObject inventorySlot3;
+
     public Sprite CapeSprite;
     public Sprite RingSprite;
     public Sprite SwordSprite;
+
+    public Sprite MusicMuted;
+    public Sprite MusicUnMuted;
 
     public GameObject HUD;
     public GameObject ShopPanel;
@@ -39,13 +43,13 @@ public class UIManager : MonoBehaviour
     public GameObject QuitButtonPausemenu;
     public GameObject QuitButtonQuitMenu;
     public GameObject CancelButton;
+    public GameObject MusicButton;
 
     public GameObject PauseMenu;
     public GameObject QuitMenu;
 
-
-
     private bool checkShop;
+    private bool checkMusicMuted = false;
 
     private void Awake()
     {
@@ -266,5 +270,23 @@ public class UIManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void MuteMusic()
+    {
+        if (checkMusicMuted==false)
+        {
+            MusicButton.GetComponent<Image>().sprite = MusicMuted;
+            checkMusicMuted = true;
+        }
+        else
+        {
+            if (checkMusicMuted == true)
+            {
+                MusicButton.GetComponent<Image>().sprite = MusicUnMuted;
+                checkMusicMuted = false;
+            }
+        }
+            
+         
+    }
 
 }
