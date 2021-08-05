@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
@@ -47,6 +48,9 @@ public class UIManager : MonoBehaviour
 
     public GameObject PauseMenu;
     public GameObject QuitMenu;
+
+    public GameObject GameOverPanel;
+    public GameObject LevelCompletePanel;
 
     private bool checkShop;
     private bool checkMusicMuted = false;
@@ -284,9 +288,44 @@ public class UIManager : MonoBehaviour
                 MusicButton.GetComponent<Image>().sprite = MusicUnMuted;
                 checkMusicMuted = false;
             }
-        }
-            
-         
+        }  
     }
+
+    public void ShowGameOverPanel()
+    {
+        
+        HUD.SetActive(false);
+        Joystick.GetComponent<Image>().enabled = false;
+        JumpButton.GetComponent<Image>().enabled = false;
+        AttackButton.GetComponent<Image>().enabled = false;
+        GameOverPanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void ShowGameLevelCompletePanel()
+    {
+        Time.timeScale = 0f;
+        HUD.SetActive(false);
+        Joystick.GetComponent<Image>().enabled = false;
+        JumpButton.GetComponent<Image>().enabled = false;
+        AttackButton.GetComponent<Image>().enabled = false;
+        LevelCompletePanel.SetActive(true);
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1f;
+    }
+
+    public void LoadNextLevel(int lvNumber) 
+    {
+        SceneManager.LoadScene("Level "+lvNumber);
+        Time.timeScale = 1f;
+    }
+
+
+
+
 
 }

@@ -130,6 +130,8 @@ public class Player : MonoBehaviour, IDamageable
     }
 
 
+
+
     void Flip(float move)
     {
         if (move > 0)
@@ -154,7 +156,6 @@ public class Player : MonoBehaviour, IDamageable
             return;
         }
 
-        Debug.Log("Player damaged");
         //remove 1 health
         Health--;
         //update ui display
@@ -164,6 +165,9 @@ public class Player : MonoBehaviour, IDamageable
         if (Health < 1)
         {
             _playerAnim.Death();
+           StartCoroutine(WaitForDeathAnimation());
+            
+
         }
         //play death animation
 
@@ -189,11 +193,14 @@ public class Player : MonoBehaviour, IDamageable
         }
         if (GameManager.Instance.Ring == true)
            _speed = 12f;
-         
-        
-       
+    }
+
+    IEnumerator WaitForDeathAnimation()
+    {
+        yield return new WaitForSeconds(1f);
+        UIManager.Instance.ShowGameOverPanel();
 
     }
-    
+
 }
 
