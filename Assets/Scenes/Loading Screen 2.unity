@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 2016536616}
   - component: {fileID: 2016536615}
   - component: {fileID: 2016536614}
+  - component: {fileID: 2016536619}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -749,6 +750,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2016536619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016536613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14935f5a5b39db45b9edde8afa5896c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoinCountText: {fileID: 0}
+  Healthbars: []
+  inventorySlot1: {fileID: 0}
+  inventorySlot2: {fileID: 0}
+  inventorySlot3: {fileID: 0}
+  CapeSprite: {fileID: 0}
+  RingSprite: {fileID: 0}
+  SwordSprite: {fileID: 0}
+  MusicMuted: {fileID: 0}
+  MusicUnMuted: {fileID: 0}
+  HUD: {fileID: 0}
+  ShopPanel: {fileID: 0}
+  Joystick: {fileID: 0}
+  JumpButton: {fileID: 0}
+  AttackButton: {fileID: 0}
+  QuitButtonPausemenu: {fileID: 0}
+  QuitButtonQuitMenu: {fileID: 0}
+  CancelButton: {fileID: 0}
+  MusicButton: {fileID: 0}
+  PauseMenu: {fileID: 0}
+  QuitMenu: {fileID: 0}
+  GameOverPanel: {fileID: 0}
+  LevelCompletePanel: {fileID: 0}
 --- !u!1 &2088317933
 GameObject:
   m_ObjectHideFlags: 0
