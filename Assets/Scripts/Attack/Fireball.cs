@@ -8,13 +8,13 @@ public class Fireball : MonoBehaviour
 
     public void Start()
     {
-        Destroy(this.gameObject, 4.0f);
+        Destroy(this.gameObject, 5.0f);
     }
 
     //move right at 3m per second 
     private void Update()
     {
-        transform.Translate(Vector3.left * 3 * Time.deltaTime);
+        transform.Translate(Vector3.left * 8 * Time.deltaTime);
     }
 
 
