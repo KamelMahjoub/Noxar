@@ -52,6 +52,9 @@ public class UIManager : MonoBehaviour
     public GameObject GameOverPanel;
     public GameObject LevelCompletePanel;
 
+    public AudioSource BGM;
+    public AudioSource GameOverMusic;
+
     private bool checkShop;
     private bool checkMusicMuted = false;
 
@@ -238,6 +241,7 @@ public class UIManager : MonoBehaviour
         JumpButton.GetComponent<Image>().enabled = false;
         AttackButton.GetComponent<Image>().enabled = false;
         PauseMenu.SetActive(true);
+        BGM.Pause();
         Time.timeScale = 0f;
 
     }
@@ -253,6 +257,7 @@ public class UIManager : MonoBehaviour
         JumpButton.GetComponent<Image>().enabled = true;
         AttackButton.GetComponent<Image>().enabled = true;
         PauseMenu.SetActive(false);
+        BGM.Play();
         Time.timeScale = 1f;
     }
 
@@ -280,6 +285,7 @@ public class UIManager : MonoBehaviour
         {
             MusicButton.GetComponent<Image>().sprite = MusicMuted;
             checkMusicMuted = true;
+            BGM.mute = true;
         }
         else
         {
@@ -287,6 +293,7 @@ public class UIManager : MonoBehaviour
             {
                 MusicButton.GetComponent<Image>().sprite = MusicUnMuted;
                 checkMusicMuted = false;
+                BGM.mute = false;
             }
         }  
     }
@@ -299,6 +306,8 @@ public class UIManager : MonoBehaviour
         JumpButton.GetComponent<Image>().enabled = false;
         AttackButton.GetComponent<Image>().enabled = false;
         GameOverPanel.SetActive(true);
+        BGM.Stop();
+        GameOverMusic.Play();
         Time.timeScale = 0f;
     }
 

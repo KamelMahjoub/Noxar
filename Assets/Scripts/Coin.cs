@@ -5,8 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public int coins = 1;
-
-
+    public AudioSource coinAudio;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,15 +16,19 @@ public class Coin : MonoBehaviour
 
             if (player != null)
             {
-               /* if(GameManager.Instance.Boots==true)
-                    player.AddCoins(coins*2);
-                else*/
-                    player.AddCoins(coins);
-                Destroy(this.gameObject);
+                player.AddCoins(coins);
+                StartCoroutine(DestroyCoinRoutine());
+       
             }
-
-
-
         }
     }
+
+
+    IEnumerator DestroyCoinRoutine()
+    {
+        coinAudio.Play();
+        yield return new WaitForSeconds(0.2f);
+        Destroy(this.gameObject);
+    }
+
 }
