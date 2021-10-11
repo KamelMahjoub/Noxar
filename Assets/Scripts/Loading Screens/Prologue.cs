@@ -9,6 +9,8 @@ public class Prologue : LoadingScreen
     GameObject ButtonNext;
     [SerializeField]
     GameObject ButtonMenu;
+    [SerializeField]
+    GameObject ButtonSkip;
 
 
     string text1 = "the crimson moon , a magical gem that's said to glow in the light of a full moon.\nAnd beneath the moon and a certain comet, will shed a tear granting immortality to whomever drinks it.";
@@ -20,7 +22,7 @@ public class Prologue : LoadingScreen
     {
         base.textString = text1;
         base.Start();
-        StartCoroutine(WaitForText(10.5f));
+        StartCoroutine(WaitForText(11f));
     }
         
 
@@ -46,6 +48,11 @@ public class Prologue : LoadingScreen
     }
 
     public void LoadMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void GoToMenu()
     {
         SceneManager.LoadScene("Main Menu");
     }

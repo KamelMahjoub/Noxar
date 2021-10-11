@@ -13,13 +13,12 @@ public class FireCultist : Enemy,IDamageable
     public override void Init()
     {
         base.Init();
-        Health = base.health;
+        Health = 1;
+        speed = 0;
     }
 
 
-    public override void Update()
-    {
-    }
+  
     public void Damage()
     {
         if (isDead == true)
@@ -41,9 +40,7 @@ public class FireCultist : Enemy,IDamageable
         }
     }
 
-    public override void Movement()
-    {
-    }
+   
 
     public void Attack()
     {

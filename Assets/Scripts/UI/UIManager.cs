@@ -271,6 +271,7 @@ public class UIManager : MonoBehaviour
     {
         QuitMenu.SetActive(false);
         PauseMenu.SetActive(true);
+
     }
 
 
