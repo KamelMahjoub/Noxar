@@ -48,6 +48,7 @@ public class UIManager : MonoBehaviour
 
     public GameObject PauseMenu;
     public GameObject QuitMenu;
+    public GameObject HelpMenu;
 
     public GameObject GameOverPanel;
     public GameObject LevelCompletePanel;
@@ -271,8 +272,21 @@ public class UIManager : MonoBehaviour
     {
         QuitMenu.SetActive(false);
         PauseMenu.SetActive(true);
+    }
+    public void OpenHelp()
+    {
+        PauseMenu.SetActive(false);
+        HelpMenu.SetActive(true);      
+    }
+
+    public void ReturnFromHelp()
+    {
+        HelpMenu.SetActive(false);
+        PauseMenu.SetActive(true);
 
     }
+
+
 
 
     public void QuitGame()
