@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
@@ -14,11 +15,15 @@ public class Shop : MonoBehaviour
     public GameObject buttonBuy;
     public GameObject JumpPanelScript;
     private JumpPanel JumpPanelVar;
+    public GameObject SpeedPanelScript;
+    private SpeedPanel SpeedPanelVar;
 
+   
 
     private void Awake()
     {
-        JumpPanelVar = JumpPanelScript.GetComponent<JumpPanel>();
+       JumpPanelVar = JumpPanelScript.GetComponent<JumpPanel>();
+  
     }
 
     public virtual void OnTriggerEnter2D(Collider2D collision)
@@ -94,7 +99,7 @@ public class Shop : MonoBehaviour
                 return JumpPanelVar._itemPrice;
                 
             case 2:
-                return 1;
+                return SpeedPanelVar._itemPrice;
                 
             case 3:
                 return 2;
@@ -112,7 +117,7 @@ public class Shop : MonoBehaviour
                 return JumpPanelVar._itemName;
                
             case 2:
-                return "1";
+                return SpeedPanelVar._itemName;
                 
             case 3:
                 return "2";
@@ -124,6 +129,7 @@ public class Shop : MonoBehaviour
 
    public String GetPanelText(int ItemID)
     {
+        
         if (CheckItemPurchased(ItemID))
         {
             buttonBuy.SetActive(false);
@@ -147,6 +153,7 @@ public class Shop : MonoBehaviour
 
     public virtual void BuyItem(int ItemID)
     {
+        
         int price = getItemPrice(ItemID);
 
         if (CheckItemPurchased(ItemID) == false)
@@ -161,7 +168,7 @@ public class Shop : MonoBehaviour
                     if (ItemID == 1)
                        panelText.text = "Congratulations! You can now jump higher!";
                     if (ItemID == 2)
-                        panelText.text = "Congratulations! You can move faster!";
+                        panelText.text = "Congratulations! You can now move faster!";
                     if (ItemID == 3)
                         panelText.text = "Congratulations! You can now hit harder";
                 }

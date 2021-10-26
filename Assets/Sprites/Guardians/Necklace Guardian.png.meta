@@ -1,7 +1,58 @@
 fileFormatVersion: 2
 guid: d9c3763925d9a7646bca1a405da75849
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8712415898637113357
+    second: Necklace Guardian_0
+  - first:
+      213: -1652168920908671618
+    second: Necklace Guardian_1
+  - first:
+      213: -3129703946501605379
+    second: Necklace Guardian_2
+  - first:
+      213: 8548520184975795507
+    second: Necklace Guardian_3
+  - first:
+      213: 9092111869045771045
+    second: Necklace Guardian_4
+  - first:
+      213: 7865299184158250809
+    second: Necklace Guardian_5
+  - first:
+      213: 3170160807634498284
+    second: Necklace Guardian_6
+  - first:
+      213: -8392493724888347710
+    second: Necklace Guardian_7
+  - first:
+      213: -4763916910441642346
+    second: Necklace Guardian_8
+  - first:
+      213: -1175290865611359717
+    second: Necklace Guardian_9
+  - first:
+      213: -8657340182134221094
+    second: Necklace Guardian_10
+  - first:
+      213: -7776730189363610169
+    second: Necklace Guardian_11
+  - first:
+      213: 7386341869253258448
+    second: Necklace Guardian_12
+  - first:
+      213: -7246087276870676741
+    second: Necklace Guardian_13
+  - first:
+      213: -7179201588445833149
+    second: Necklace Guardian_14
+  - first:
+      213: 4177919703525668777
+    second: Necklace Guardian_15
+  - first:
+      213: 8014911022495477740
+    second: Necklace Guardian_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +92,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +126,390 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Necklace Guardian_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 5
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7e44a86e7471780800000000000000
+      internalID: -8712415898637113357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 5
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e755c48be115219e0800000000000000
+      internalID: -1652168920908671618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 5
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df732a0b7de0194d0800000000000000
+      internalID: -3129703946501605379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 5
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3352db4f0d172a670800000000000000
+      internalID: 8548520184975795507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 6
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b0694a29bad2e70800000000000000
+      internalID: 9092111869045771045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_5
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 16
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9371ce39fe7272d60800000000000000
+      internalID: 7865299184158250809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_6
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 18
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce27be3557caefb20800000000000000
+      internalID: 3170160807634498284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 5
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbc55c2c6fd78b80800000000000000
+      internalID: -8392493724888347710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 5
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69646ad6fca23edb0800000000000000
+      internalID: -4763916910441642346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_9
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 17
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a39774f2780bfe0800000000000000
+      internalID: -1175290865611359717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_10
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 5
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad69c2019f2fad780800000000000000
+      internalID: -8657340182134221094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_11
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 5
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdfcec7811831490800000000000000
+      internalID: -7776730189363610169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_12
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 6
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc6f6aabce818660800000000000000
+      internalID: 7386341869253258448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_13
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 6
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe45aa530ab07b90800000000000000
+      internalID: -7246087276870676741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_14
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 5
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34814cd313a5e5c90800000000000000
+      internalID: -7179201588445833149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 6
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7b0c4b5d3faf930800000000000000
+      internalID: 4177919703525668777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Necklace Guardian_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 5
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefa4323c1faa3f60800000000000000
+      internalID: 8014911022495477740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class JumpPanel : Shop
+public class JumpPanel : ShopV3
 {
 
     [HideInInspector]
