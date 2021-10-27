@@ -54,7 +54,7 @@ public class ShopV3 : MonoBehaviour
         switch (ItemID)
         {
             case 1:
-                if (GameManager.Instance.Cloak == true)
+                if (Globals.Cape == true)
                     return true;
                 break;
         }
@@ -68,7 +68,7 @@ public class ShopV3 : MonoBehaviour
         switch (ItemID)
         {
             case 1:
-                GameManager.Instance.Cloak = true;
+                Globals.Cape = true;
                 UIManager.Instance.UpdateInventoryOnAdd(ItemID);
                 break;
         }

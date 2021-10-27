@@ -48,7 +48,11 @@ public class Player : MonoBehaviour, IDamageable
         _playerAnim = GetComponent<PlayerAnimation>();
         _playerSprite = GetComponentInChildren<SpriteRenderer>();
         Health = 6;
-    } 
+        UIManager.Instance.UpdateInventory();
+
+
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -61,8 +65,7 @@ public class Player : MonoBehaviour, IDamageable
             _playerAnim.Attack();
         }
 
-        UIManager.Instance.UpdateCoinCount(Coins);
-
+        UIManager.Instance.UpdateCoinCount(Globals.Coins);
         CheckPowerUps();
 
 
@@ -175,31 +178,35 @@ public class Player : MonoBehaviour, IDamageable
 
     public void AddCoins(int amount)
     {
+        // Coins += amount;
         Coins += amount;
-       UIManager.Instance.UpdateCoinCount(Coins);
+        Globals.Coins += amount;
+        UIManager.Instance.UpdateCoinCount(Coins);
+       
+       
     }
 
     public void SubstractCoins(int amount)
     {
         Coins -= amount;
+        Globals.Coins -= amount;
         UIManager.Instance.UpdateCoinCount(Coins);
     }
 
     public void CheckPowerUps()
     {
-        if (GameManager.Instance.Cloak == true)
+        if (Globals.Cape == true)
         {
             _jumpForce = 12f;
         }
-        if (GameManager.Instance.Ring == true)
-           _speed = 12f;
+        if (Globals.Ring == true)
+           _speed = 8f;
     }
 
     IEnumerator WaitForDeathAnimation()
     {
         yield return new WaitForSeconds(1f);
         UIManager.Instance.ShowGameOverPanel();
-
     }
 
 }

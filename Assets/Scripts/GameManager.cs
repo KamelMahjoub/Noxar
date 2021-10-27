@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
+    
+
     public static GameManager Instance
     {
         get
@@ -22,10 +24,12 @@ public class GameManager : MonoBehaviour
     public bool Ring { get; set; }
     public bool Sword { get; set; }
 
+    public static int Coins { get; set; }
 
     private void Awake()
     {
         _instance = this;
+        
     }
 
 }

@@ -49,6 +49,7 @@ public class UIManager : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject QuitMenu;
     public GameObject HelpMenu;
+    public GameObject Credits;
 
     public GameObject GameOverPanel;
     public GameObject LevelCompletePanel;
@@ -59,9 +60,12 @@ public class UIManager : MonoBehaviour
     private bool checkShop;
     private bool checkMusicMuted = false;
 
+   private Scene ThisScene;
+   private string sceneName;
+
     private void Awake()
     {
-        _instance = this;     
+        _instance = this;
     }
 
    
@@ -159,7 +163,7 @@ public class UIManager : MonoBehaviour
     public void UpdateInventory()
     {
 
-        if (GameManager.Instance.Cloak)
+        if (Globals.Cape)
         {
             if (inventorySlot1.activeSelf == false)
             {
@@ -180,7 +184,7 @@ public class UIManager : MonoBehaviour
             }
         }
 
-        if (GameManager.Instance.Ring)
+        if (Globals.Ring)
         {
             if (inventorySlot1.activeSelf == false)
             {
@@ -201,7 +205,7 @@ public class UIManager : MonoBehaviour
             }
 
         }
-        if(GameManager.Instance.Sword)
+        if(Globals.Sword)
         {
                 if (inventorySlot1.activeSelf == false)
                 {
@@ -344,8 +348,37 @@ public class UIManager : MonoBehaviour
 
     public void LoadNextLevel(int lvNumber) 
     {
-        SceneManager.LoadScene("Level "+lvNumber);
-        Time.timeScale = 1f;
+        ThisScene = SceneManager.GetActiveScene();
+        sceneName = ThisScene.name;
+
+        if (sceneName.Equals("Level 4"))
+        {
+            HUD.SetActive(false);
+            Joystick.GetComponent<Image>().enabled = false;
+            JumpButton.GetComponent<Image>().enabled = false;
+            AttackButton.GetComponent<Image>().enabled = false;
+            BGM.Stop();
+            Credits.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            SceneManager.LoadScene("Level " + lvNumber);
+            Time.timeScale = 1f;
+           
+        }
+           
+    }
+
+    public void LoadCredits()
+    {
+        HUD.SetActive(false);
+        Joystick.GetComponent<Image>().enabled = false;
+        JumpButton.GetComponent<Image>().enabled = false;
+        AttackButton.GetComponent<Image>().enabled = false;
+        BGM.Stop();
+        Credits.SetActive(true);
+        Time.timeScale = 0f;
     }
 
 

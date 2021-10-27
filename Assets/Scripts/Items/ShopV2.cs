@@ -53,7 +53,7 @@ public class ShopV2 : MonoBehaviour
         switch (ItemID)
         {
             case 2:
-                if (GameManager.Instance.Ring == true)
+                if (Globals.Ring == true)
                     return true;
                 break;
         }
@@ -67,7 +67,7 @@ public class ShopV2 : MonoBehaviour
         switch (ItemID)
         {
             case 2:
-                GameManager.Instance.Ring = true;
+                Globals.Ring = true;
                 UIManager.Instance.UpdateInventoryOnAdd(ItemID);
                 break;
         }
