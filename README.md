@@ -2,4 +2,5 @@ Noxar is a 2D mobile platformer/RPG developed with Unity as part of my End of St
 first step for me to get into game development.
 
 In this game,you take control of Noxar, a hero wielding swords and magic, as you battle your way through various monsters and obstacles in your way to investigate the criminal organization called “The Crimson Cult”.
+
 While adventuring, you may collect coins to spend mysterious shopkeeper who offers various items that’ll help you gain more powers to help in your quest.
