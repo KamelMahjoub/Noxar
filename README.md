@@ -1,6 +1,6 @@
 ## Project Information
 
-Noxar is a 2D mobile platformer/RPG developed with Unity as part of my End of Studies project for my master's degree in Mobile Applications Development and as a first step for me to get into game development.
+Noxar is a 2D mobile platformer/RPG developed with Unity as part of my End of Studies project for my master's degree in Mobile Application Development and as a first step for me to get into game development.
 
 ## Game Description
 
@@ -10,4 +10,4 @@ During the game, Noxar battles his way through various monsters and obstacles as
 
 ## Gamplay video  
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/JmFY6YmOQKY/0.jpg)](https://www.youtube.com/watch?v=JmFY6YmOQKY)
+[![link to Noxar's gameplay video](https://img.youtube.com/vi/JmFY6YmOQKY/0.jpg)](https://www.youtube.com/watch?v=JmFY6YmOQKY)
