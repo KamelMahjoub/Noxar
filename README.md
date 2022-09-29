@@ -5,4 +5,4 @@ In this game,you take control of Noxar, a hero wielding swords and magic, as you
 While adventuring, you may collect coins to spend mysterious shopkeeper who offers various items that’ll help you gain more powers to help in your quest.
 
 Gamplay video : 
-[(https://img.youtube.com/vi/JmFY6YmOQKY/0.jpg)](https://www.youtube.com/watch?v=JmFY6YmOQKY)
+[!(https://img.youtube.com/vi/JmFY6YmOQKY/0.jpg)](https://www.youtube.com/watch?v=JmFY6YmOQKY)
