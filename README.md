@@ -1,13 +1,13 @@
-## Project Information
+## About This Project
 
-Noxar is a 2D mobile platformer/RPG developed with Unity as part of my End of Studies project for my master's degree in Mobile Application Development and as a first step for me to get into game development.
+**Noxar : The Crimson Moon** is a 2D mobile platformer game that I developed as part of my Master's Thesis in Mobile Application Development, which is titled "***Designing and Developing a Mobile Game using Unity***". It served as my entry into the world of game development.
 
-## Game Description
+In **Noxar : The Crimson Moon**, players assume the role of "**Noxar**", a hero wielding swords and magic, as he investigates the criminal organization known as "**The Crimson Moon**". It offers an engaging gameplay experience with a combination of platformer mechanics and RPG elements.
 
-Noxar is a 2D mobile platformer with RPG elements where you take control of Noxar, a hero wielding swords and magic, as he investigates the criminal organization "The Crimson Moon".
+Throughout the game, players guide "**Noxar**" through various levels, battling monsters and overcoming obstacles. The hero collects coins that can be spent at a shopkeeper's mysterious store, where various enchanted items are available to help "**Noxar**" grow stronger in his quest.
 
-During the game, Noxar battles his way through various monsters and obstacles aswell as collecting coins to spend on the myserious shopkeeper who offers various items that are going to help our hero gain more power in his quest.
+## Links
 
-## Gamplay video  
+ Further project details can be found [here](https://kamelmahjoub.wixsite.com/portfolio/noxar). 
 
-[![link to Noxar's gameplay video](https://img.youtube.com/vi/JmFY6YmOQKY/0.jpg)](https://www.youtube.com/watch?v=JmFY6YmOQKY)
+ For contact info, and more projects, please visit my [portfolio](https://kamelmahjoub.wixsite.com/portfolio).
