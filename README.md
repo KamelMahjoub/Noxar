@@ -8,6 +8,6 @@ Throughout the game, players guide "**Noxar**" through various levels, battling 
 
 ## Links
 
- Further project details can be found [here](https://kamelmahjoub.wixsite.com/portfolio/noxar). 
+ - Further project details can be found [here](https://kamelmahjoub.wixsite.com/portfolio/noxar). 
 
- For contact info, and more projects, please visit my [portfolio](https://kamelmahjoub.wixsite.com/portfolio).
+ - For contact info, and more projects, please visit my [portfolio](https://kamelmahjoub.wixsite.com/portfolio).
